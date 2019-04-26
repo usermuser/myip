@@ -1,0 +1,7 @@
+# https://docs.python.org/3.1/howto/urllib2.html
+
+import urllib.request
+addr = 'https://api.myip.org'
+response = urllib.request.urlopen(addr)
+html = response.read()
+print(html)
